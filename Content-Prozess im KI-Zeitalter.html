@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Content-Prozess im KI-Zeitalter</title>
+<style>
+:root{--bg:#faf8f5;--fg:#1d1b19;--muted:#6a645d;--card:#fff;--line:#e6e0d8;--accent:#e4572e;--accent2:#1f6f78;--soft:#fdeee8;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#161412;--fg:#f1ede8;--muted:#a8a099;--card:#211e1b;--line:#35302b;--accent:#ff7a52;--accent2:#5fc0ca;--soft:#2c1f1a}}
+:root[data-theme="dark"]{--bg:#161412;--fg:#f1ede8;--muted:#a8a099;--card:#211e1b;--line:#35302b;--accent:#ff7a52;--accent2:#5fc0ca;--soft:#2c1f1a}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+nav{position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--line);z-index:5;padding:12px 20px;display:flex;gap:20px;flex-wrap:wrap;justify-content:center;font-size:15px}
+nav a{color:var(--muted);text-decoration:none;font-weight:600}
+nav a:hover{color:var(--accent)}
+.wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+header{padding:72px 0 48px;text-align:center}
+.tag{display:inline-block;background:var(--soft);color:var(--accent);font-weight:700;font-size:13px;letter-spacing:.08em;text-transform:uppercase;padding:6px 14px;border-radius:99px}
+h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(2.2rem,6vw,3.8rem);line-height:1.1;margin:20px 0 16px}
+h1 span{color:var(--accent)}
+header p{color:var(--muted);max-width:620px;margin:0 auto;font-size:1.1rem}
+section{padding:48px 0}
+h2{font-family:Georgia,serif;font-size:clamp(1.6rem,4vw,2.2rem);margin:0 0 8px}
+.lead{color:var(--muted);margin:0 0 32px;max-width:680px}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;counter-reset:s}
+.step{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px;position:relative}
+.step::before{counter-increment:s;content:counter(s);display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--accent);color:#fff;font-weight:800;margin-bottom:12px}
+.step h3{margin:0 0 6px;font-size:1.15rem}
+.step p{margin:0;color:var(--muted);font-size:.97rem}
+.scroll{overflow-x:auto;border:1px solid var(--line);border-radius:16px;background:var(--card)}
+table{border-collapse:collapse;width:100%;min-width:720px;font-size:.95rem}
+th,td{text-align:left;padding:14px 16px;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--soft);font-size:.8rem;text-transform:uppercase;letter-spacing:.05em}
+tr:last-child td{border-bottom:0}
+td:first-child{font-weight:700}
+.na{color:var(--muted);font-style:italic}
+details{background:var(--card);border:1px solid var(--line);border-radius:16px;margin-bottom:12px;overflow:hidden}
+summary{cursor:pointer;padding:18px 22px;font-weight:700;list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:center}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--accent);font-size:1.6rem;line-height:1;transition:transform .2s}
+details[open] summary::after{transform:rotate(45deg)}
+.body{padding:0 22px 22px;display:grid;gap:12px}
+.row{display:grid;grid-template-columns:100px 1fr;gap:12px}
+.lbl{font-weight:800;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;padding-top:3px}
+.l1{color:var(--accent)}.l2{color:var(--accent2)}.l3{color:#2e9e5b}
+@media(max-width:560px){.row{grid-template-columns:1fr;gap:2px}}
+footer{border-top:1px solid var(--line);padding:32px 0;text-align:center;color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body>
+<nav>
+<a href="#prozess">Prozess</a><a href="#tools">Tool-Landkarte</a><a href="#probleme">Problem-Landkarte</a>
+</nav>
+
+<header class="wrap">
+<span class="tag">Content Creation &amp; Performance</span>
+<h1>Content-Prozess im <span>KI-Zeitalter</span></h1>
+<p>Vom Redaktionskalender bis zur Optimierung: in fünf Schritten zu Inhalten, die wirken. Dazu die passenden Tools und Lösungen für typische Stolpersteine.</p>
+</header>
+
+<main class="wrap">
+<section id="prozess">
+<h2>Der Content-Prozess in 5 Schritten</h2>
+<p class="lead">KI unterstützt in jeder Phase, die Verantwortung bleibt beim Menschen.</p>
+<div class="steps">
+<div class="step"><h3>Planung</h3><p>Ziele festlegen, Zielgruppe bestimmen, Themen recherchieren und den Redaktionskalender füllen. KI hilft bei Brainstorming und Keyword-Ideen.</p></div>
+<div class="step"><h3>Erstellung</h3><p>Multi-Format-Produktion: Text, Bild, Video, Audio. Menschliche Kontrolle ist Pflicht: Fakten-Check, Tonalität, Branding.</p></div>
+<div class="step"><h3>Distribution</h3><p>Ausspielen über Owned Media (Blog, E-Mail), Paid Media (Ads) und Earned Media (Backlinks, Shares).</p></div>
+<div class="step"><h3>Analyse</h3><p>Leistungsmessung mit GA4, Social Media Insights und CRM-Daten (Klickraten, Conversions).</p></div>
+<div class="step"><h3>Optimierung</h3><p>Performance-schwache Inhalte nachschärfen, erfolgreiche Muster ausbauen und veraltete Links und Texte per KI auffrischen.</p></div>
+</div>
+</section>
+
+<section id="tools">
+<h2>Tool-Landkarte: Adobe CC vs. Gratis-/KI-Alternativen</h2>
+<p class="lead">In der Praxis muss es oft schnell gehen. Für jedes Profi-Tool der Adobe Creative Cloud gibt es einsteigerfreundliche oder kostenlose KI-Alternativen.</p>
+<div class="scroll">
+<table>
+<thead><tr><th>Disziplin</th><th>Profi-Standard (Adobe)</th><th>Schnelle / Kostenlose KI-Alternativen</th><th>Bestes Einsatzgebiet im Alltag</th></tr></thead>
+<tbody>
+<tr><td>Text &amp; Recherche</td><td class="na">Kein Adobe-Pendant</td><td>ChatGPT, Google Gemini, Perplexity, Claude</td><td>Entwürfe, Brainstorming, Fakten-Recherche mit Quellen</td></tr>
+<tr><td>Bildbearbeitung</td><td>Photoshop</td><td>Canva, Pixlr, Fotor, GIMP</td><td>Freistellen, Rabatt-Banner, Social Posts in 5 Min</td></tr>
+<tr><td>Videoschnitt</td><td>Premiere Pro</td><td>CapCut, DaVinci Resolve, Gemini (Veo 3), Canva Video</td><td>Short-Form Videos (Reels, TikToks), automatische Untertitel</td></tr>
+<tr><td>Vektoren &amp; Logos</td><td>Illustrator</td><td>Inkscape, Vectr, Canva</td><td>Verlustfreie Logos, Icons für Webshops, Infografiken</td></tr>
+<tr><td>Layout &amp; Print</td><td>InDesign</td><td>Canva, Scribus, Google Docs</td><td>Mehrseitige PDFs, E-Books, Flyer und Kataloge</td></tr>
+<tr><td>Motion &amp; Effekte</td><td>After Effects</td><td>Blender, Canva Animationen</td><td>Animierte Logos, Video-Intros, bewegte Grafiken</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="probleme">
+<h2>Problem-Landkarte: Typische Hürden in der Praxis</h2>
+<p class="lead">Klicke auf ein Problem, um Erkennen, Prüfen und Lösen aufzuklappen.</p>
+
+<details>
+<summary>Problem 1: „Wir produzieren viel Content, aber niemand kauft“ (Falsche Funnel-Ausrichtung)</summary>
+<div class="body">
+<div class="row"><span class="lbl l1">Erkennen</span><span>Hohe Impressionen oder Likes (TOFU), aber keine Conversions oder Verkäufe im Shop.</span></div>
+<div class="row"><span class="lbl l2">Prüfen</span><span>Fehlt Content in der MOFU- oder BOFU-Phase (z. B. keine Anwendungs-Tutorials, fehlende Kundenbewertungen oder unklare Produktdatenblätter)?</span></div>
+<div class="row"><span class="lbl l3">Lösen</span><span>Zielgerichteten BOFU-Content ergänzen (z. B. Trust-Siegel, Video-Reviews, klare Calls-to-Action).</span></div>
+</div>
+</details>
+
+<details>
+<summary>Problem 2: „Unsere KI-Texte klingen alle gleich und austauschbar“ (KI-Spam-Risiko)</summary>
+<div class="body">
+<div class="row"><span class="lbl l1">Erkennen</span><span>Generischer Schreibstil ohne Markenidentität, sinkendes Nutzer-Engagement, SEO-Verluste.</span></div>
+<div class="row"><span class="lbl l2">Prüfen</span><span>Wurden KI-Texte ohne Prompt-Anpassung und Überarbeitung direkt veröffentlicht?</span></div>
+<div class="row"><span class="lbl l3">Lösen</span><span>KI als Co-Autor nutzen. Markenstimme definieren, eigene Erfahrungswerte und Case Studies einweben und Fakten manuell prüfen.</span></div>
+</div>
+</details>
+
+<details>
+<summary>Problem 3: „Keine Zeit für aufwendige Video-Produktionen“ (Ressourcen-Engpass)</summary>
+<div class="body">
+<div class="row"><span class="lbl l1">Erkennen</span><span>Das Team ist mit komplexen Tools wie Premiere Pro oder After Effects überfordert.</span></div>
+<div class="row"><span class="lbl l2">Prüfen</span><span>Ist für einfache Social-Media-Reels wirklich Profi-Software nötig?</span></div>
+<div class="row"><span class="lbl l3">Lösen</span><span>Umstieg auf browser- oder app-basierte Tools. B-Roll-Szenen mit Veo 3 / Gemini generieren und in CapCut oder Canva Video mit Templates und Auto-Untertiteln schneiden.</span></div>
+</div>
+</details>
+</section>
+</main>
+
+<footer>Content Creation &amp; Performance · Content-Prozess im KI-Zeitalter</footer>
+</body>
+</html>
