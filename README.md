@@ -1,4 +1,5 @@
-[README.md](https://github.com/user-attachments/files/33003305/README.md)
+
+
 # Content-Prozess im KI-Zeitalter
 
 Einseitige Lern-Website zum Modul *Content Creation & Performance*. Sie fasst den Content-Prozess in fünf Schritten zusammen, stellt Adobe-Tools und kostenlose KI-Alternativen gegenüber und zeigt typische Probleme aus der Praxis mit Lösungswegen.
