@@ -1,160 +1,315 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Content-Prozess im KI-Zeitalter</title>
-<style>
-:root{--bg:#faf8f5;--fg:#1d1b19;--muted:#6a645d;--card:#fff;--line:#e6e0d8;--accent:#e4572e;--accent2:#1f6f78;--soft:#fdeee8;
-box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#161412;--fg:#f1ede8;--muted:#a8a099;--card:#211e1b;--line:#35302b;--accent:#ff7a52;--accent2:#5fc0ca;--soft:#2c1f1a}}
-:root[data-theme="dark"]{--bg:#161412;--fg:#f1ede8;--muted:#a8a099;--card:#211e1b;--line:#35302b;--accent:#ff7a52;--accent2:#5fc0ca;--soft:#2c1f1a}
-html{scroll-behavior:smooth;scroll-padding-top:70px}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
-nav{position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--line);z-index:5;padding:12px 20px;display:flex;gap:20px;flex-wrap:wrap;justify-content:center;font-size:15px}
-nav a{color:var(--muted);text-decoration:none;font-weight:600}
-nav a:hover{color:var(--accent)}
-.wrap{max-width:1000px;margin:0 auto;padding:0 20px}
-header{padding:72px 0 48px;text-align:center}
-.tag{display:inline-block;background:var(--soft);color:var(--accent);font-weight:700;font-size:13px;letter-spacing:.08em;text-transform:uppercase;padding:6px 14px;border-radius:99px}
-h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(2.2rem,6vw,3.8rem);line-height:1.1;margin:20px 0 16px}
-h1 span{color:var(--accent)}
-header p{color:var(--muted);max-width:620px;margin:0 auto;font-size:1.1rem}
-section{padding:48px 0}
-h2{font-family:Georgia,serif;font-size:clamp(1.6rem,4vw,2.2rem);margin:0 0 8px}
-.lead{color:var(--muted);margin:0 0 32px;max-width:680px}
-.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;counter-reset:s}
-.step{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px;position:relative}
-.step::before{counter-increment:s;content:counter(s);display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--accent);color:#fff;font-weight:800;margin-bottom:12px}
-.step h3{margin:0 0 6px;font-size:1.15rem}
-.step p{margin:0;color:var(--muted);font-size:.97rem}
-.scroll{overflow-x:auto;border:1px solid var(--line);border-radius:16px;background:var(--card)}
-table{border-collapse:collapse;width:100%;min-width:720px;font-size:.95rem}
-th,td{text-align:left;padding:14px 16px;border-bottom:1px solid var(--line);vertical-align:top}
-th{background:var(--soft);font-size:.8rem;text-transform:uppercase;letter-spacing:.05em}
-tr:last-child td{border-bottom:0}
-td:first-child{font-weight:700}
-.na{color:var(--muted);font-style:italic}
-details{background:var(--card);border:1px solid var(--line);border-radius:16px;margin-bottom:12px;overflow:hidden}
-summary{cursor:pointer;padding:18px 22px;font-weight:700;list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:center}
-summary::-webkit-details-marker{display:none}
-summary::after{content:"+";color:var(--accent);font-size:1.6rem;line-height:1;transition:transform .2s}
-details[open] summary::after{transform:rotate(45deg)}
-.body{padding:0 22px 22px;display:grid;gap:12px}
-.row{display:grid;grid-template-columns:100px 1fr;gap:12px}
-.lbl{font-weight:800;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;padding-top:3px}
-.l1{color:var(--accent)}.l2{color:var(--accent2)}.l3{color:#2e9e5b}
-@media(max-width:560px){.row{grid-template-columns:1fr;gap:2px}}
-footer{border-top:1px solid var(--line);padding:32px 0;text-align:center;color:var(--muted);font-size:.9rem}
-</style>
+<title>2.2 SEO, Content & CRM Marketing – Playbook</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>html{scroll-behavior:smooth}summary{list-style:none;cursor:pointer}summary::-webkit-details-marker{display:none}details[open]>summary .chev{transform:rotate(180deg)}section{scroll-margin-top:5rem}html{padding-bottom:env(safe-area-inset-bottom,0px)}.ab{border-bottom:1px dotted #047857;cursor:help}</style>
 </head>
-<body>
-<nav>
-<a href="#prozess">Prozess</a><a href="#tools">Tool-Landkarte</a><a href="#probleme">Problem-Landkarte</a>
-</nav>
-
-<header class="wrap">
-<span class="tag">Content Creation &amp; Performance</span>
-<h1>Content-Prozess im <span>KI-Zeitalter</span></h1>
-<p>Vom Redaktionskalender bis zur Optimierung: in fünf Schritten zu Inhalten, die wirken. Dazu die passenden Tools und Lösungen für typische Stolpersteine.</p>
-</header>
-
-<main class="wrap">
-<section id="prozess">
-<h2>Der Content-Prozess in 5 Schritten</h2>
-<p class="lead">KI unterstützt in jeder Phase, die Verantwortung bleibt beim Menschen.</p>
-<div class="steps">
-<div class="step"><h3>Planung</h3><p>Ziele festlegen, Zielgruppe bestimmen, Themen recherchieren und den Redaktionskalender füllen. KI hilft bei Brainstorming und Keyword-Ideen.</p></div>
-<div class="step"><h3>Erstellung</h3><p>Multi-Format-Produktion: Text, Bild, Video, Audio. Menschliche Kontrolle ist Pflicht: Fakten-Check, Tonalität, Branding.</p></div>
-<div class="step"><h3>Distribution</h3><p>Ausspielen über Owned Media (Blog, E-Mail), Paid Media (Ads) und Earned Media (Backlinks, Shares).</p></div>
-<div class="step"><h3>Analyse</h3><p>Leistungsmessung mit GA4, Social Media Insights und CRM-Daten (Klickraten, Conversions).</p></div>
-<div class="step"><h3>Optimierung</h3><p>Performance-schwache Inhalte nachschärfen, erfolgreiche Muster ausbauen und veraltete Links und Texte per KI auffrischen.</p></div>
+<body class="bg-white text-slate-800 font-sans antialiased">
+<div style="top:env(safe-area-inset-top,0px)" class="sticky top-0 z-30 bg-white/95 backdrop-blur border-b border-slate-200">
+ <div class="max-w-5xl mx-auto px-4 py-3 flex items-center gap-4">
+  <div class="font-semibold text-emerald-900">Playbook 2.2</div>
+  <div class="flex-1 hidden sm:block"><div class="h-2 rounded-full bg-slate-100 overflow-hidden"><div id="barT" class="h-full bg-emerald-700 transition-all" style="width:0%"></div></div></div>
+  <span id="cntT" class="text-xs sm:text-sm text-slate-500 tabular-nums">0 Felder</span>
+  <a href="#arena" class="hidden sm:inline text-sm text-emerald-800 hover:underline">Begriffe-Arena</a>
+  <button data-export class="rounded-full bg-emerald-800 hover:bg-emerald-900 text-white text-sm font-medium px-4 py-2 transition">Fortschritt exportieren</button>
+ </div>
 </div>
-</section>
 
-<section id="tools">
-<h2>Tool-Landkarte: Adobe CC vs. Gratis-/KI-Alternativen</h2>
-<p class="lead">In der Praxis muss es oft schnell gehen. Für jedes Profi-Tool der Adobe Creative Cloud gibt es einsteigerfreundliche oder kostenlose KI-Alternativen.</p>
-<div class="scroll">
-<table>
-<thead><tr><th>Disziplin</th><th>Profi-Standard (Adobe)</th><th>Schnelle / Kostenlose KI-Alternativen</th><th>Bestes Einsatzgebiet im Alltag</th></tr></thead>
-<tbody>
-<tr><td>Text &amp; Recherche</td><td class="na">Kein Adobe-Pendant</td><td>ChatGPT, Google Gemini, Perplexity, Claude</td><td>Entwürfe, Brainstorming, Fakten-Recherche mit Quellen</td></tr>
-<tr><td>Bildbearbeitung</td><td>Photoshop</td><td>Canva, Pixlr, Fotor, GIMP</td><td>Freistellen, Rabatt-Banner, Social Posts in 5 Min</td></tr>
-<tr><td>Videoschnitt</td><td>Premiere Pro</td><td>CapCut, DaVinci Resolve, Gemini (Veo 3), Canva Video</td><td>Short-Form Videos (Reels, TikToks), automatische Untertitel</td></tr>
-<tr><td>Vektoren &amp; Logos</td><td>Illustrator</td><td>Inkscape, Vectr, Canva</td><td>Verlustfreie Logos, Icons für Webshops, Infografiken</td></tr>
-<tr><td>Layout &amp; Print</td><td>InDesign</td><td>Canva, Scribus, Google Docs</td><td>Mehrseitige PDFs, E-Books, Flyer und Kataloge</td></tr>
-<tr><td>Motion &amp; Effekte</td><td>After Effects</td><td>Blender, Canva Animationen</td><td>Animierte Logos, Video-Intros, bewegte Grafiken</td></tr>
-</tbody>
-</table>
-</div>
-</section>
+<main class="max-w-5xl mx-auto px-4 pb-24">
+ <header class="py-10 sm:py-14">
+  <p class="text-sm font-medium text-emerald-800">Sektion 2.2 · für Einsteiger</p>
+  <h1 class="mt-2 text-3xl sm:text-5xl font-bold tracking-tight text-emerald-950 leading-tight">2.2 SEO, Content &amp; CRM Marketing – Datengetrieben &amp; KI-Optimiert</h1>
 
-<section id="probleme">
-<h2>Problem-Landkarte: Typische Hürden in der Praxis</h2>
-<p class="lead">Klicke auf ein Problem, um Erkennen, Prüfen und Lösen aufzuklappen.</p>
+  <div id="ov" class="mt-8 rounded-3xl border border-slate-200 bg-emerald-50/60 p-6 sm:p-8">
+   <h2 class="text-lg font-semibold text-emerald-900">2-Minuten-Übersicht</h2>
+   <p class="mt-2 text-slate-700 max-w-3xl">Kund*innen durchlaufen eine Kette: Sie finden dich, lesen deine Inhalte, werden im CRM erfasst, bekommen passende E-Mails und erwarten guten Service. <strong>Jede Lektion betrachtet ein Glied dieser Kette.</strong> KI beschleunigt jedes Glied, die Verantwortung bleibt beim Menschen.</p>
+   <div id="chain" class="mt-5 grid gap-2 sm:grid-cols-5"></div>
+   <div class="mt-5 rounded-r-xl border-l-4 border-amber-600 bg-amber-50 p-4 text-sm"><strong>Wichtig:</strong> Sichtbar ist nicht gleich geklickt, und geklickt ist nicht gleich gekauft. Diese Ebenen immer getrennt prüfen.</div>
+   <div class="mt-5 overflow-x-auto"><table class="w-full min-w-[34rem] text-sm bg-white rounded-xl overflow-hidden border border-slate-200">
+    <thead class="bg-slate-50 text-left"><tr><th class="p-2.5 border border-slate-200">Lektion</th><th class="p-2.5 border border-slate-200">Frage, die sie beantwortet</th><th class="p-2.5 border border-slate-200">Typische Tools</th></tr></thead>
+    <tbody id="tools"></tbody></table></div>
+   <p class="mt-4 text-sm text-slate-500">So nutzt du das Playbook: Karte wählen → Glossar und Leitfaden lesen → Workbook ausfüllen. Alles wird automatisch im Browser gespeichert. Unterstrichene Abkürzungen kannst du antippen, die Erklärung erscheint am unteren Rand.</p>
+  </div>
+ </header>
 
-<details>
-<summary>Problem 1: „Wir produzieren viel Content, aber niemand kauft“ (Falsche Funnel-Ausrichtung)</summary>
-<div class="body">
-<div class="row"><span class="lbl l1">Erkennen</span><span>Hohe Impressionen oder Likes (TOFU), aber keine Conversions oder Verkäufe im Shop.</span></div>
-<div class="row"><span class="lbl l2">Prüfen</span><span>Fehlt Content in der MOFU- oder BOFU-Phase (z. B. keine Anwendungs-Tutorials, fehlende Kundenbewertungen oder unklare Produktdatenblätter)?</span></div>
-<div class="row"><span class="lbl l3">Lösen</span><span>Zielgerichteten BOFU-Content ergänzen (z. B. Trust-Siegel, Video-Reviews, klare Calls-to-Action).</span></div>
-</div>
-</details>
+ <nav id="nav" aria-label="Lektionen" class="grid gap-3"></nav>
+ <section id="arena" class="mt-12 rounded-3xl border border-emerald-200 bg-emerald-50/40 p-6 sm:p-8">
+  <h2 class="text-2xl font-bold text-emerald-950">Begriffe-Arena</h2>
+  <p class="mt-1 text-slate-600 text-sm max-w-2xl">Fachbegriffe und Abkürzungen spielerisch lernen: nachschlagen, mit Karteikarten üben oder im Quiz testen. Unterstrichene Abkürzungen im Text kannst du jederzeit antippen.</p>
+  <div class="mt-4 flex items-center gap-3"><div class="h-2 flex-1 rounded-full bg-white overflow-hidden border border-emerald-100"><div id="arenaBar" class="h-full bg-emerald-700 transition-all" style="width:0%"></div></div><span id="arenaCnt" class="text-xs text-slate-500"></span></div>
+  <div class="mt-4 flex flex-wrap items-center gap-2"><button data-tab="quiz">Quiz</button><button data-tab="cards">Karteikarten</button><button data-tab="lex">Lexikon</button>
+   <select id="lf" class="ml-auto rounded-full border border-slate-300 bg-white px-3 py-2 text-sm"><option value="all">Alle Lektionen</option><option>2.2.1</option><option>2.2.2</option><option>2.2.3</option><option>2.2.4</option><option>2.2.5</option></select></div>
+  <div id="arenaBody" class="mt-4"></div>
+ </section>
+ <div id="lessons" class="mt-16 space-y-14"></div>
 
-<details>
-<summary>Problem 2: „Unsere KI-Texte klingen alle gleich und austauschbar“ (KI-Spam-Risiko)</summary>
-<div class="body">
-<div class="row"><span class="lbl l1">Erkennen</span><span>Generischer Schreibstil ohne Markenidentität, sinkendes Nutzer-Engagement, SEO-Verluste.</span></div>
-<div class="row"><span class="lbl l2">Prüfen</span><span>Wurden KI-Texte ohne Prompt-Anpassung und Überarbeitung direkt veröffentlicht?</span></div>
-<div class="row"><span class="lbl l3">Lösen</span><span>KI als Co-Autor nutzen. Markenstimme definieren, eigene Erfahrungswerte und Case Studies einweben und Fakten manuell prüfen.</span></div>
-</div>
-</details>
+ <section id="abschluss" class="mt-14 rounded-3xl border border-slate-200 p-6 sm:p-8"><div id="road"></div></section>
 
-<details>
-<summary>Problem 3: „Keine Zeit für aufwendige Video-Produktionen“ (Ressourcen-Engpass)</summary>
-<div class="body">
-<div class="row"><span class="lbl l1">Erkennen</span><span>Das Team ist mit komplexen Tools wie Premiere Pro oder After Effects überfordert.</span></div>
-<div class="row"><span class="lbl l2">Prüfen</span><span>Ist für einfache Social-Media-Reels wirklich Profi-Software nötig?</span></div>
-<div class="row"><span class="lbl l3">Lösen</span><span>Umstieg auf browser- oder app-basierte Tools. B-Roll-Szenen mit Veo 3 / Gemini generieren und in CapCut oder Canva Video mit Templates und Auto-Untertiteln schneiden.</span></div>
-</div>
-</details>
-</section>
+ <section class="mt-14 rounded-3xl bg-emerald-900 text-white p-8 sm:p-10">
+  <h2 class="text-2xl font-bold">Dein Workbook sichern</h2>
+  <p class="mt-2 text-emerald-100 max-w-2xl">Alle Antworten, Häkchen und Notizen werden sauber formatiert gesammelt.</p>
+  <div class="mt-6 flex flex-wrap gap-3">
+   <button data-export class="rounded-full bg-white text-emerald-900 font-semibold px-6 py-3 hover:bg-emerald-50 transition">Fortschritt exportieren / Alles kopieren</button>
+   <button id="dl" class="rounded-full border border-emerald-500 text-white px-5 py-3 text-sm hover:bg-emerald-800 transition">Als Textdatei speichern</button>
+   <button id="reset" class="rounded-full border border-emerald-700 text-emerald-200 px-5 py-3 text-sm hover:bg-emerald-800 transition">Alles löschen</button>
+  </div>
+ </section>
 </main>
+<div id="tip" role="status" class="hidden fixed inset-x-4 bottom-4 z-50 max-w-md mx-auto rounded-2xl bg-emerald-950 text-white p-4 text-sm shadow-xl"></div>
+<div id="toast" role="status" aria-live="polite" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-40 opacity-0 pointer-events-none transition-opacity duration-300 rounded-full bg-emerald-950 text-white px-5 py-3 shadow-lg text-sm"></div>
 
-<footer>Content Creation &amp; Performance · Content-Prozess im KI-Zeitalter</footer>
+<script>
+(function(){
+const L=[
+{id:"2.2.1",t:"SEO, GEO & Content – Sichtbarkeitsoptimierung im KI-Zeitalter",step:"Gefunden werden",q:"Wie werde ich in Suche und KI-Antworten sichtbar?",tools:"Sistrix, Search Console, GA4, Screaming Frog",
+ intro:"SEO macht Unternehmen in Suchmaschinen sichtbar, GEO in KI-Antworten (Google KI-Modus, ChatGPT, Gemini, Perplexity). Top-Rankings führen nicht mehr automatisch zu Klicks, deshalb müssen Tracking und Reporting neu gedacht werden.",
+ m:"SEO = in Suchergebnissen gefunden werden. GEO = in KI-Antworten genannt werden. Beides braucht saubere Technik, klare Inhalte und Vertrauen von außen.",
+ d:[["SEO","Optimierung von Onpage (Keywords, Meta-Tags, Struktur) und Offpage (Backlinks, Signale) für gute organische Rankings."],["GEO (Generative Engine Optimization)","Maßnahmen, damit Marken in KI-generierten Antworten genannt und zitiert werden."],["Online-PR","Erwähnungen auf vertrauenswürdigen Plattformen. Für GEO zentral, weil KI Dritt-Quellen als Vertrauenssignal nutzt."],["TOFU / MOFU / BOFU","Top, Middle und Bottom of the Funnel. KI-Antworten bedienen oft schon frühe Phasen, das verändert das Klickverhalten."]],
+ g:[["Suchintention je Seite klären, nicht nur Keywords streuen","Hoch"],["Technische Basis prüfen (Core Web Vitals, semantisches HTML, Meta-Tags)","Hoch"],["Inhalte klar, faktenbasiert und zitierfähig aufbauen","Mittel"],["GEO-Sichtbarkeit zusätzlich zu Rankings tracken","Niedrig"]],
+ f:[["seite","Gewählte Seite oder Unternehmen (Name, URL)","text"],["intent","Welche Suchintention bedient die Seite (informieren, vergleichen, kaufen)? In welcher Funnel-Phase?","area"],["fragen","3 Fragen, die Kund*innen einer KI stellen könnten","area"],["kurz","Kurzantwort für eine dieser Fragen, wie eine KI sie zitieren könnte","words",[40,60]]]},
+{id:"2.2.2",t:"Content Creation & Performance – Effizienter mit KI",step:"Überzeugen",q:"Welcher Inhalt passt zu welchem Ziel?",tools:"ChatGPT, Adobe Creative Cloud, Analytics",
+ intro:"Content-Marketing schafft nützliche Inhalte statt reiner Werbung, um Vertrauen aufzubauen. KI verändert den Content-Prozess, ersetzt aber nicht die Strategie: Format, Ziel und Funnel-Phase müssen zusammenpassen.",
+ m:"Erst das Ziel, dann das Format, dann das Tool. Format = Ausgestaltung, Kanal = Plattform, Typ = Zweck.",
+ d:[["Content-Marketing","Nützliche, informative oder unterhaltsame Inhalte, die Vertrauen aufbauen und Kaufentscheidungen erleichtern."],["Format, Kanal, Inhaltstyp","Format (Blogartikel, Reel), Kanal (Website, Instagram), Typ (Zweck oder Thema) sind drei verschiedene Dinge."],["Content-Prozess","Ablauf von Planung über Erstellung und Veröffentlichung bis zur Messung und Optimierung."],["Content-Performance","Messbarer Beitrag eines Inhalts zu Reichweite, Engagement, Leads oder Umsatz."]],
+ g:[["Ziel pro Inhalt festlegen, bevor ein Format gewählt wird","Hoch"],["Formate entlang der Funnel-Phasen auswählen","Hoch"],["KI für Entwürfe und Varianten nutzen, redaktionell prüfen","Mittel"],["Tool-Auswahl am Anwendungsfall ausrichten","Niedrig"]],
+ f:[["ziel","Content-Ziel (z. B. Newsletter-Anmeldungen) und Zielgruppe","area"],["format","Gewähltes Format, Kanal und Funnel-Phase mit Begründung","area"],["ki","Welchen Teil des Prozesses übernimmt KI, wo prüft ein Mensch?","area"]]},
+{id:"2.2.3",t:"Smart CRM (B2B & B2C) – Kundenbindung & Personalisierung mit KI",step:"Kennenlernen",q:"Wie spreche ich Kund*innen individuell an?",tools:"Bitrix24, Salesforce, Dynamics 365",
+ intro:"CRM-Daten ermöglichen individuelle statt pauschaler Ansprache. B2B und B2C unterscheiden sich in Entscheidungsprozessen und Datenlage. KI unterstützt bei Personalisierung, Lead-Scoring und der Brücke zwischen Marketing und Vertrieb.",
+ m:"Kein Gießkannen-Marketing: Je besser die Daten, desto relevanter die Botschaft. Marketing und Vertrieb brauchen dieselbe Datenbasis.",
+ d:[["CRM","Customer Relationship Management: zentrale Verwaltung von Kundendaten und Interaktionen."],["Leadsteuerung","Leads erfassen, qualifizieren und weiterentwickeln, bis sie vertriebsreif sind."],["Lead-Scoring","Bewertung von Leads nach Eigenschaften und Verhalten, mit oder ohne KI."],["Customer Journey","Alle Kontaktpunkte von der Aufmerksamkeit bis zur Bindung, im CRM teilautomatisierbar."]],
+ g:[["Gemeinsame Lead-Definition für Marketing und Vertrieb festlegen","Hoch"],["Datenschutz und Datenqualität sichern, bevor personalisiert wird","Hoch"],["B2B und B2C getrennt ansprechen","Mittel"],["CRM-Systeme nach Bedienung, KI-Funktionen und Automation vergleichen","Niedrig"]],
+ f:[["seg","Zwei Segmente (ein B2B-, ein B2C-Beispiel) mit je einer passenden Botschaft","area"],["lead","3 Kriterien, nach denen ein Lead vertriebsreif ist","area"],["daten","Welche Daten brauchst du dafür im CRM?","area"]]},
+{id:"2.2.4",t:"E-Mail Automation – Smarte Kampagnen mit KI-Boost",step:"Begleiten",q:"Wie automatisiere ich relevante Kampagnen?",tools:"E-Mail-Tools mit Workflows, KI-Textassistenz",
+ intro:"E-Mail gehört zu den Owned Media: volle Datenhoheit, keine Abhängigkeit von Plattform-Algorithmen. KI hilft bei Kampagnen und Personalisierung, Workflows sorgen für Skalierung, und das BFSG verlangt barrierefreie Gestaltung.",
+ m:"Owned Media gehören dir: Dein Verteiler ist unabhängig von jedem Algorithmus.",
+ d:[["Owned Media","Eigene Kanäle wie Newsletter oder Website, die du selbst kontrollierst."],["Workflow / Trigger","Automatische Abfolge, die ein Ereignis auslöst, z. B. Anmeldung oder Warenkorbabbruch."],["Personalisierung","Anpassung von Betreff, Inhalt und Timing anhand von Kundendaten."],["BFSG","Barrierefreiheitsstärkungsgesetz (gilt seit 28.06.2025): betrifft vor allem Service-Mails wie Bestellbestätigungen, reine Werbe-Mails meist nicht direkt."]],
+ g:[["Double-Opt-In und Datenschutzhinweise (inkl. Tracking) rechtssicher umsetzen","Hoch"],["Willkommens- und Warenkorb-Workflow zuerst automatisieren","Hoch"],["Service-Mails barrierefrei gestalten (Kontrast, klare Struktur, Alt-Texte)","Mittel"],["Betreffzeilen per A/B-Test mit KI-Vorschlägen testen","Niedrig"]],
+ f:[["wf","Dein 3-stufiger Workflow: Trigger, Bedingung, E-Mails mit Timing","area"],["ab","Zwei Betreffzeilen für einen A/B-Test","area"],["kpi","Welche Kennzahl entscheidet (Öffnungs-, Klick-, Conversion-Rate)?","text"]]},
+{id:"2.2.5",t:"Kundenkommunikation",step:"Binden",q:"Wie kommuniziere ich im Service professionell?",tools:"Service-Templates, KI-Assistenz mit Freigabe",
+ intro:"Service ist kein reiner Support, sondern Teil des Marketings. Marketing weckt Erwartungen, Service entscheidet, ob sie erfüllt werden. Schriftliche Kommunikation ist dokumentiert und rechtlich relevant, KI unterstützt, der Mensch gibt frei.",
+ m:"Jede Kundenantwort ist Marketing, auch wenn sie aus dem Service kommt.",
+ d:[["Plain Language","Klare, einfache Sprache, die Rückfragen vermeidet."],["Präventive Kommunikation","Informieren, bevor Fragen oder Beschwerden entstehen."],["Human-in-the-Loop (HITL)","Ein Mensch prüft und verantwortet KI-Entwürfe vor dem Versand."],["Eskalation / Handoff","Übergabe eines Falls an eine höhere Stufe oder einen Menschen nach festen Regeln."]],
+ g:[["Handoff- und Eskalationsregeln verbindlich definieren","Hoch"],["Jede KI-Antwort vor Versand prüfen (Fakten, Ton, Rechtliches)","Hoch"],["Prompts mit Rolle, Tonalität und Grenzen standardisieren","Mittel"],["Templates für wiederkehrende Fälle pflegen","Niedrig"]],
+ f:[["antw","Antwort auf eine typische Beschwerde in Plain Language, maximal 5 Sätze (max. 80 Wörter)","words",[1,80]],["check","Checkliste mit 5 Punkten für die menschliche Prüfung einer KI-Antwort","area"]]}
+];
+const R={id:"Abschluss",t:"Roadmap: Top 3 Maßnahmen",road:1,i:"Was zuerst? Sortiere nach Wirkung und Aufwand und lege fest, woran du den Erfolg misst."};
+const MODS=L.concat([R]);
+const PR=["Quick Win","Strategisch","Dauerhaft"],AU=["gering","mittel","hoch"];
+const BC={Hoch:"bg-red-50 text-red-700 border-red-200",Mittel:"bg-amber-50 text-amber-700 border-amber-200",Niedrig:"bg-emerald-50 text-emerald-700 border-emerald-200"};
+const KEY="playbook22-workbook-v1";let V={};try{V=JSON.parse(localStorage.getItem(KEY)||"{}")}catch(e){}
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(V))}catch(e){}};
+const $=s=>document.querySelector(s),wc=s=>(s||"").trim().split(/\s+/).filter(Boolean).length;
+const IN="w-full rounded-xl border border-slate-300 px-3 py-2 text-sm focus:outline-none focus:border-emerald-700 focus:ring-2 focus:ring-emerald-200";
+const keys=m=>m.road?[0,1,2].map(r=>"r"+r+"m"):m.f.map(x=>m.id+"_"+x[0]);
+const chev='<svg class="chev w-4 h-4 shrink-0 text-emerald-800 transition-transform" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 8l5 5 5-5"/></svg>';
+
+$("#chain").innerHTML=L.map((l,i)=>`<a href="#s${l.id}" class="rounded-2xl border border-slate-200 bg-white p-3 hover:border-emerald-700 transition"><b class="text-emerald-900">${i+1}. ${l.step}</b><small class="block text-slate-500 mt-1 leading-snug">${l.q}</small><span class="inline-block mt-2 text-xs rounded-md bg-emerald-100 text-emerald-800 px-2 py-0.5">${l.id}</span></a>`).join("");
+$("#tools").innerHTML=L.map(l=>`<tr><td class="p-2.5 border border-slate-200 font-semibold text-emerald-900 whitespace-nowrap">${l.id}</td><td class="p-2.5 border border-slate-200">${l.q}</td><td class="p-2.5 border border-slate-200 text-slate-600">${l.tools}</td></tr>`).join("");
+$("#nav").innerHTML=L.map(l=>`<a href="#s${l.id}" class="group flex items-stretch rounded-3xl border border-slate-200 bg-white overflow-hidden hover:border-emerald-700 hover:shadow-md transition"><div class="w-24 sm:w-32 shrink-0 bg-emerald-800 group-hover:bg-emerald-900 text-white flex items-center justify-center text-xl sm:text-2xl font-bold transition">${l.id}</div><div class="flex-1 p-4 sm:p-5 min-w-0"><div class="font-semibold text-slate-900">${l.t}</div><div class="mt-3 flex items-center gap-3"><div class="h-2 flex-1 rounded-full bg-slate-100 overflow-hidden"><div data-bar="${l.id}" class="h-full bg-emerald-700 transition-all" style="width:0%"></div></div><span data-pct="${l.id}" class="text-xs text-slate-500 tabular-nums w-10 text-right">0 %</span></div></div></a>`).join("");
+
+const X={
+"2.2.1":{k:[
+["Vom Ranking zur KI-Antwort: die Entwicklung","Klassische SEO: Ziel waren die „10 blauen Links“, Erfolg hieß Ranking → Klick → Conversion.\n2022/23: ChatGPT verändert das Suchverhalten, Nutzer*innen stellen Fragen direkt an Chatbots.\nMai 2023: Google startet die Search Generative Experience (SGE), daraus werden die AI Overviews („Übersichten mit KI“).\nSeit Oktober 2025 gibt es den KI-Modus auch in der deutschen Suche: ein Dialog mit Folgefragen direkt in der Suchleiste.\nFolge: Zero Clicks. Selbst Platz 1 kann unter der KI-Antwort stehen. GEO fragt deshalb: Wie bringe ich ChatGPT, Google AI und Perplexity dazu, meine Inhalte zu nennen?"],
+["Was bleibt, was ist neu","Bleibt: Crawling und Indexierung (saubere Struktur, Mobile-First, Page Speed, XML-Sitemap, robots.txt), Onpage-Signale (Title, Meta-Description, H1-Hierarchie), Backlinks und E-E-A-T.\nNeu: Inhalte müssen abgeschlossen, zitierbar und prägnant sein, mit klaren Named Entities (Marken- und Produktnamen).\nStrukturierte Daten (FAQPage, HowTo, Product via Schema.org), Tabellen, Bulletpoints und Content-Chunking (klare Gliederung zur gezielten Extraktion) helfen der KI beim Auslesen.\nSysteme unterscheiden sich: Google-KI nutzt Index plus LLM-Auswertung. ChatGPT ohne Live-Suche stützt sich auf Trainingsdaten, mit Internetmodus (Bing) und Gemini (Google) arbeiten sie hybrid."],
+["Online-PR & Reputation","Online-PR ist keine bezahlte Werbung, sondern redaktionelle Präsenz: Fachmedien, Branchenportale, Interviews, Studien, Gastbeiträge, Wikipedia, Fachforen.\nKI-Systeme achten stark auf autoritative Quellen. Erwähnungen stärken E-E-A-T und verankern Wissen über die Marke.\nEntity-Regel: immer denselben Namen und dieselbe Schreibweise für Marke und Autor*innen verwenden."],
+["Tracking im GEO-Zeitalter","Sichtbarkeit ist nicht gleich Traffic: KI-Antworten wirken schon beim Lesen (Zero-Click-Sichtbarkeit), in Klicks und Sitzungen taucht das kaum auf.\nNeue Fragen: Wurde mein Content von der KI aufgegriffen? Wurde meine Marke oder Website genannt?\nKlickverhalten verschiebt sich entlang des Funnels. Mit GA4 und Search Console prüfst du Traffic-Qualität und Nutzerverhalten."],
+["Masterclass: Technik & GEO-Praxis","Suchmaschinen arbeiten in Schritten: Entdecken → Crawling → Rendering → Indexierung → Ranking. Fehler in früheren Schritten gleicht kein guter Inhalt aus.\nStatuscodes: 301 dauerhafte Weiterleitung, 302/307 vorübergehend, 404 nicht gefunden, 410 bewusst dauerhaft entfernt.\nCore Web Vitals (Richtwerte): LCP ≤ 2,5 s (Ladezeit des größten Elements), INP ≤ 200 ms (Reaktionszeit), CLS ≤ 0,1 (Layout-Verschiebungen).\nGoogle betont: Sondertricks ersetzen weder Crawlability noch hochwertige, originäre Inhalte. llms.txt ist für Google-Rankings weder nötig noch hilfreich.\nBing Webmaster Tools zeigen unter „AI Performance“ Citations, zitierte Seiten und Grounding Queries. Eine Citation ist kein Klick, deshalb zusätzlich Brand Search, Leads und Conversions messen.\nContent-Methode 1-5-15: ein starkes Primär-Asset, daraus 5 vertiefende Inhalte, daraus mindestens 15 kleine Einheiten für verschiedene Kanäle."]],
+s:["Technik und Sichtbarkeit mit Screaming Frog und Sistrix",[
+"Screaming Frog öffnen (Free-Version: bis 500 URLs), Domain eingeben und den Crawl starten.",
+"Ergebnis prüfen: Title-Tags und Meta Descriptions (fehlend, zu lang), Broken Links (404), Weiterleitungen (301 dauerhaft, 302 vorübergehend), hreflang bei mehrsprachigen Seiten.",
+"In Sistrix die Domain eingeben und den Sichtbarkeitsindex ansehen. Entscheidend sind Verlauf und Vergleich mit Mitbewerbern, nicht die absolute Zahl.",
+"Keyword-Rankings, SERP-Features (z. B. AI Overviews), Verzeichnisebene (z. B. /blog/) und Mobile gegen Desktop auswerten.",
+"Bei einem Einbruch auf technische Fehler, Google-Updates oder Content-Probleme prüfen und mit Search Console und GA4 gegenchecken."]]},
+"2.2.2":{k:[
+["Content-Marketing: Definition & Ziele","Nützliche, informative oder unterhaltsame Inhalte statt reiner Werbung: Mehrwert liefern, damit Menschen freiwillig wiederkommen.\nZiele: Reichweite und Sichtbarkeit, Markenaufbau und Vertrauen, Leadgenerierung und Verkäufe, Kundenservice und Loyalität.\nHerausforderungen: Informationsflut, KI-Spam (Qualität und Glaubwürdigkeit werden zum Vorteil), Zero-Click, knappe Ressourcen, Messbarkeit."],
+["Der Content-Prozess in 5 Phasen","1 Planung: Ziele, Zielgruppen, Themen, Formate, Redaktionskalender.\n2 Erstellung: Text, Bild, Video, Audio.\n3 Distribution: Owned Media (Website, Blog, Newsletter) und Paid Media (Ads, Influencer).\n4 Analyse: Seitenaufrufe, Verweildauer, Klickrate, Anmeldungen, KPIs wie Conversion-Rate.\n5 Optimierung: nachschärfen, alte Inhalte aktualisieren (Content Recycling), erfolgreiche Formate verstärken."],
+["Formate, Kanäle & Funnel","Format = Ausgestaltung (Blogartikel, Reel, Podcast), Kanal = Plattform, Typ = Zweck oder Thema.\nTOFU Reichweite: Kurzvideo, Blogartikel. MOFU Vertrauen: Newsletter, Whitepaper, Tutorials. BOFU Kaufentscheidung: Bewertungen, Rabattaktionen.\nTrends: Kurzvideo als Leitmedium. KI greift bevorzugt auf FAQs, How-tos und Glossare zurück. User Generated Content schafft Vertrauen und Social Proof."]],
+s:["KI-Tools im Content-Workflow",[
+"Ziel, Zielgruppe und Funnel-Phase festlegen, bevor du ein Tool öffnest.",
+"Ideen sammeln: ChatGPT nach Themenclustern und einem Content-Plan fragen (z. B. Blogideen für ein Modehaus im Herbst).",
+"Fakten prüfen: Perplexity oder Gemini liefern aktuelle Zahlen und Quellen. Alles gegenchecken.",
+"Visuals erstellen: Canva (Templates und KI-Bild) für Social Posts, Piktochart für Infografiken.",
+"Veröffentlichen, Kennzahlen messen und den Inhalt anhand der Analyse optimieren."]]},
+"2.2.3":{k:[
+["CRM als digitales Gedächtnis","Zentrale Datenbasis für Marketing, Vertrieb und Service: Stammdaten, Interaktionsdaten (E-Mails, Telefonate, Formulare) und Transaktionsdaten (Bestellungen, Warenkorbabbrüche).\nOhne CRM liegen Daten verstreut in Excel und Postfächern, mit CRM ist fundierte Analyse möglich.\nAchtung Kostenfalle (z. B. HubSpot startet günstig, wird bei Wachstum teuer) und DSGVO (Einwilligungen, Löschung, Serverstandort)."],
+["Drei Stufen der Personalisierung","Statisch: Platzhalter wie Name oder Anrede.\nDynamisch (regelbasiert): Inhalte nach Verhalten oder Segment, z. B. Reaktivierungsmail an Inaktive.\nPrädiktiv (KI): sagt voraus, wer kaufen wird, welcher Inhalt passt und wann der richtige Zeitpunkt ist."],
+["CRM-Systeme vergleichen","Sechs Dimensionen: Benutzerfreundlichkeit, KI-Funktionen, Automation, Integrationen, Kosten, Datenschutz.\nSalesforce: Konzerne, sehr teuer. HubSpot: KMU, starker Einstieg, Free limitiert. Microsoft Dynamics: Microsoft-Integration. Zoho: KMU, günstig. Bitrix24: KMU und E-Commerce, All-in-One."],
+["B2B vs. B2C","B2B: komplexe Entscheidungen, oft mehrere Personen (Buying Center), längere Dauer, Fokus auf ROI, Effizienz und Sicherheit.\nB2C: schnellere, oft spontane oder emotionale Entscheidungen, Fokus auf Preis, Erlebnis und Marke.\nAchtung: Das sind Tendenzen, keine Gesetze. Ausnahmen im B2C sind z. B. Autokauf oder Urlaubsbuchung."],
+["Leads steuern & übergeben","Lead-Prozess: Erfassen → Qualifizieren → Anreichern → Scoring → Übergabe an Vertrieb → Konversion.\nMQL = von Marketing qualifiziert, noch nicht vertriebsreif. SQL = vom Vertrieb als „heiß“ eingestuft. Lead Nurturing entwickelt Leads mit passendem Content.\nScoring-Beispiel: Whitepaper +10, Newsletter lesen und klicken +20, Beratung buchen +50. KI-Scoring lernt aus historischen Daten, braucht aber genug davon, sonst sind Muster zufällig."]],
+s:["Leadsteuerung am Beispiel Bitrix24",[
+"Leads erfassen: über Website-Formular, Social Media oder manuell ins CRM.",
+"Routing-Regel anlegen: Leads gehen automatisch an die passenden Mitarbeitenden oder Abteilungen.",
+"In der Pipeline (Kanban-Ansicht) den Lead-Status vom Erstkontakt bis zum Abschluss sichtbar machen.",
+"Automatisierungsregel setzen, z. B. nach 5 Tagen ohne Antwort eine automatische Folgeaktion.",
+"Scoring-Punkte und die Übergabe MQL → SQL festlegen, damit Marketing und Vertrieb mit denselben Daten arbeiten."]]},
+"2.2.4":{k:[
+["Rolle & Arten","Owned Media: volle Datenhoheit, keine Abhängigkeit von Algorithmen. E-Mail ist die „Verlängerung“ des Shops.\nArten: Newsletter, Kampagnenmailing, automatisierte E-Mail (z. B. Warenkorbabbruch), Transaktionsmail (Bestellbestätigung), Standalone-Mailing über fremde Verteiler.\nFunnel: TOFU Lead-Magnets und Anmeldung, MOFU Empfehlungen und Social Proof, BOFU Rabattcodes und Reviews, Retention Feedback und Treueprogramme."],
+["Recht: DSGVO, EU AI Act, BFSG","Double-Opt-In ist Pflicht (Anmeldung plus Bestätigungsmail). Datenschutzhinweis und Tracking (Öffnungen, Klicks) gehören in die Datenschutzerklärung.\nKI-generierte Inhalte unterliegen laut Vorlesung seit August 2026 der Kennzeichnungspflicht nach EU AI Act.\nBFSG (gilt seit 28. Juni 2025): Service-Mails wie Bestellbestätigungen sind meist relevant, reine Werbe-Mails meist nicht direkt.\nBarrierefrei heißt: gut lesbar (Kontrast), einfach verständlich, klar aufgebaut (Überschriften, aussagekräftige Links), per Tastatur und Screenreader bedienbar."],
+["KI in Kampagne & Personalisierung","KI erzeugt Varianten nach Emotion, Dringlichkeit und Zielgruppe. Beispielprompt: „Schreibe 5 Betreffzeilen für eine Re-Engagement-Kampagne im freundlichen, motivierenden Ton.“\nSegmentierung per Cluster-Analyse (Kaufhistorie, Engagement, Warenwert), Predictive Scoring und Micro-Segments.\nPersonalisierung über Variablen ({{Vorname}}, {{zuletzt angesehenes Produkt}}) und Next-Best-Offer, dazu KI-gestützte Versandzeitoptimierung.\nErfolgsfaktoren: Relevanz vor Frequenz, klarer Mehrwert, saubere Daten, Testen und Lernen (A/B), Kanalverknüpfung."]],
+s:["Einen automatisierten Workflow aufbauen",[
+"Trigger wählen: z. B. Warenkorbabbruch, Newsletter-Anmeldung oder Statuswechsel im CRM (Lead → Kunde).",
+"Aktion festlegen: E-Mail senden oder CRM-Eintrag aktualisieren.",
+"Bedingung definieren: Wann läuft der Workflow weiter oder stoppt er (z. B. Kauf abgeschlossen)?",
+"Kampagnentyp wählen: Welcome Series, Warenkorbabbrecher (Erinnerung nach 3 h), Re-Engagement, Post-Purchase oder Lead-Nurturing.",
+"Texte mit KI entwerfen, KI-Kennzeichnung und Barrierefreiheit prüfen, per A/B-Test starten und Kennzahlen auswerten."]]},
+"2.2.5":{k:[
+["Service ist Marketing","Support reagiert auf Probleme, Service schafft Vertrauen und bindet. Marketing weckt Erwartungen, Service entscheidet, ob sie erfüllt werden.\nSchriftliche Kommunikation lässt keine Rückfrage zu, bleibt dokumentiert, ist weiterleitbar und rechtlich relevant.\nServicequalität ist Wahrnehmung: Maßstab ist das beste Erlebnis, das Kund*innen kennen. Fünf Erwartungsdimensionen: Geschwindigkeit, Klarheit, Verlässlichkeit, Transparenz und Wertschätzung.\nService wirkt entlang der Journey (Awareness, Consideration, Purchase, Retention, Advocacy). Der beste Servicekontakt ist der, der gar nicht nötig wird."],
+["KI im Service: Möglichkeiten & Grenzen","Stufen: Textbaustein, Regelantwort, KI-Draft (Mensch prüft verpflichtend), autonome KI (hohes Risiko).\nGut geeignet: Statusanfragen („Wo ist mein Paket?“), Prozessinfos (Retourenweg), formale Bestätigungen. Nutzen laut Folie: rund −60 % Antwortzeit bei Standardanfragen und konsistente Struktur.\nKI kann nicht bewerten: Kontext und Angemessenheit, rechtliche Verantwortung, Fairness, Markenpassung.\nBei Beschwerden, Emotionen, Rechtsfragen und Kulanz gilt 100 % Human Oversight."],
+["Telefonservice","Service-Calls folgen 5 Gesprächsphasen, u. a. Begrüßung mit Rahmen, Anliegen klären (mit Zusammenfassung), Lösung anbieten (2 Optionen mit Empfehlung), Checkback und Abschluss mit Next Step und Dank.\nFür schwierige Gespräche: Loop-Breaker, Callback und Warm Transfer trainieren."]],
+s:["Eine KI-Antwort sicher freigeben (Human-in-the-Loop)",[
+"Anfrage einordnen: Standardfall (Status, Prozess, Bestätigung) oder sensibler Fall (Beschwerde, Rechtliches, Kulanz)?",
+"Sensibler Fall: nicht per KI versenden, sondern an einen Menschen oder die Eskalationsstufe übergeben.",
+"Standardfall: KI-Entwurf mit einem Prompt erstellen, der Rolle, Tonalität, Grenzen und Plain Language vorgibt.",
+"Prüfen: Fakten, Ton, rechtliche Aussagen und Markenpassung.",
+"Freigeben und senden, danach Rückfragen auswerten und die Vorlage verbessern."]]}
+};
+const li=t=>t.split("\n").map(x=>`<li>${x}</li>`).join("");
+const learn=l=>`<p class="rounded-xl bg-emerald-50 px-4 py-3 text-sm text-emerald-950"><b>Lernziele:</b> Nach dieser Lektion kannst du ${Z[l.id]}.</p><div><h3 class="font-semibold text-emerald-900 mb-3">Lernstoff</h3><div class="space-y-2">${X[l.id].k.map(([a,b],i)=>`<details ${i?"":"open"} class="rounded-2xl border border-slate-200 open:border-emerald-300 open:bg-emerald-50/40"><summary class="flex items-center justify-between gap-4 px-4 py-3 font-medium">${a}${chev}</summary><ul class="px-4 pb-4 pl-9 text-sm text-slate-600 list-disc space-y-1.5">${li(b)}</ul></details>`).join("")}</div></div>`;
+const steps=l=>{const s=X[l.id].s;return `<div><h3 class="font-semibold text-emerald-900 mb-3">Schritt für Schritt: ${s[0]}</h3><ol class="space-y-3">${s[1].map((t,i)=>`<li class="flex gap-3 text-sm"><span class="shrink-0 w-7 h-7 rounded-full bg-emerald-800 text-white grid place-items-center font-semibold">${i+1}</span><span class="pt-0.5">${t}</span></li>`).join("")}</ol></div>`};
+const T=[
+["SEO","Search Engine Optimization","Alles, was dafür sorgt, dass deine Seite in den normalen, unbezahlten Google-Ergebnissen gefunden wird.","2.2.1"],
+["GEO","Generative Engine Optimization","Optimierung dafür, dass KI-Systeme wie ChatGPT, Gemini oder Google KI deine Marke nennen und zitieren.","2.2.1"],
+["AEO","Answer Engine Optimization","Optimierung auf direkte Antworten, ein Nachbarbegriff von GEO.","2.2.1"],
+["SERP","Search Engine Result Page","Die Ergebnisseite einer Suche, also das, was du nach dem Googeln siehst.","2.2.1"],
+["LLM","Large Language Model","Sehr großes Sprachmodell, das mit riesigen Textmengen trainiert wurde und Texte versteht und schreibt (z. B. ChatGPT).","2.2.1"],
+["AI Overview","Übersichten mit KI","KI-Zusammenfassung, die über den normalen Google-Ergebnissen eingeblendet wird.","2.2.1"],
+["KI-Modus","AI Mode","Googles Chat-Suche mit Folgefragen direkt in der Suchleiste, in Deutschland seit Oktober 2025.","2.2.1"],
+["Zero Click","","Die Antwort steht schon auf der Ergebnisseite, deshalb klickt niemand mehr auf eine Website.","2.2.1"],
+["E-E-A-T","Experience, Expertise, Authoritativeness, Trust","Erfahrung, Fachwissen, Autorität und Vertrauen: daran messen Google und KI, ob eine Quelle glaubwürdig ist.","2.2.1"],
+["Entity","Named Entity","Ein eindeutig erkennbares „Ding“ wie Person, Marke, Produkt oder Ort. Darum überall dieselbe Schreibweise nutzen.","2.2.1"],
+["Citation","","Sichtbarer Quellenverweis auf deine Seite innerhalb einer KI-Antwort. Eine Citation ist nicht automatisch ein Klick.","2.2.1"],
+["Grounding","","Die KI-Antwort wird mit überprüfbaren externen Quellen verknüpft.","2.2.1"],
+["Schema Markup","Schema.org","Zusatzcode, der Suchmaschinen sagt, was ein Inhalt ist, z. B. FAQ, Anleitung oder Produkt.","2.2.1"],
+["Content-Chunking","","Inhalte in klare, in sich verständliche Abschnitte gliedern, damit KI einzelne Passagen herausziehen kann.","2.2.1"],
+["Backlink","","Link einer fremden Website auf deine. Gilt als Vertrauenssignal.","2.2.1"],
+["Crawling","","Ein Bot (Crawler) ruft Seiten ab und liest sie, bevor Google sie aufnimmt.","2.2.1"],
+["Indexierung","","Google nimmt eine Seite in seinen Katalog (Index) auf. Gecrawlt ist nicht indexiert, und indexiert ist nicht gut platziert.","2.2.1"],
+["robots.txt","","Datei, die Bots sagt, welche Bereiche sie nicht abrufen sollen.","2.2.1"],
+["noindex","","Anweisung: Diese Seite nicht in die Suchergebnisse aufnehmen.","2.2.1"],
+["XML-Sitemap","","Liste der wichtigen URLs einer Website, damit Suchmaschinen sie leichter finden.","2.2.1"],
+["Canonical","","Markiert die bevorzugte URL, wenn derselbe Inhalt unter mehreren Adressen erreichbar ist.","2.2.1"],
+["301/302","Weiterleitungen","301 = dauerhaft umgezogen, 302 = nur vorübergehend. Ein 404 bedeutet: Seite nicht gefunden.","2.2.1"],
+["Core Web Vitals","CWV","Googles Messwerte für Ladezeit (LCP), Reaktionszeit (INP) und Layout-Stabilität (CLS).","2.2.1"],
+["CTR","Click-through Rate","Klickrate: Klicks geteilt durch Impressionen (wie oft die Seite angezeigt wurde).","2.2.1"],
+["Sichtbarkeitsindex","Sistrix","Wert dafür, wie oft und wie weit vorn eine Domain bei Google erscheint. Es zählen Verlauf und Vergleich, nicht die absolute Zahl.","2.2.1"],
+["GSC","Google Search Console","Kostenloses Google-Tool mit Klicks, Impressionen und Indexierungsstatus deiner Seite.","2.2.1"],
+["GA4","Google Analytics 4","Zeigt, was Besucher*innen nach dem Klick auf deiner Website tun.","2.2.1"],
+["IndexNow","","Push-Protokoll: Du meldest Änderungen aktiv an Bing & Co., statt auf den Bot zu warten.","2.2.1"],
+["llms.txt","","Datei für KI-Systeme. Laut Google für Rankings in der Google-Suche weder nötig noch positiv oder negativ.","2.2.1"],
+["NAP","Name, Address, Phone","Einheitliche Firmenangaben (Name, Adresse, Telefon), wichtig für lokale Sichtbarkeit.","2.2.1"],
+["TOFU/MOFU/BOFU","Funnel","Top, Middle, Bottom of Funnel: kennen → erwägen → handeln.","2.2.2"],
+["KPI","Key Performance Indicator","Kennzahl, an der du Erfolg misst, z. B. die Conversion-Rate.","2.2.2"],
+["Conversion","","Eine gewünschte Handlung wie Kauf, Anmeldung oder Download. Die Conversion-Rate ist der Anteil, der sie ausführt.","2.2.2"],
+["UGC","User Generated Content","Inhalte von Kund*innen wie Bewertungen oder Videos. Sie schaffen Vertrauen (Social Proof).","2.2.2"],
+["Owned/Paid Media","","Owned = eigene Kanäle (Website, Newsletter), Paid = bezahlte Reichweite (Ads).","2.2.2"],
+["Content Recycling","","Alte, gute Inhalte aktualisieren und erneut nutzen.","2.2.2"],
+["1-5-15-Methode","","Ein starkes Primär-Asset, daraus 5 vertiefende Inhalte, daraus mindestens 15 kleine Einheiten für verschiedene Kanäle.","2.2.2"],
+["CRM","Customer Relationship Management","Das „digitale Gedächtnis“ eines Unternehmens: alle Kundendaten und Kontakte an einem Ort.","2.2.3"],
+["Lead","","Interessent*in, die oder der Interesse gezeigt hat, z. B. per Formular oder Download.","2.2.3"],
+["MQL","Marketing Qualified Lead","Vom Marketing als interessiert eingestuft, aber noch nicht reif für den Vertrieb.","2.2.3"],
+["SQL","Sales Qualified Lead","Vom Vertrieb als „heiß“ eingestuft: konkrete Kaufabsicht.","2.2.3"],
+["Lead Scoring","","Punktesystem für Leads, z. B. Whitepaper +10, Beratung buchen +50. Je höher, desto kaufbereiter.","2.2.3"],
+["Lead Nurturing","","Leads mit passendem Content Schritt für Schritt zur Kaufreife begleiten.","2.2.3"],
+["B2B/B2C","Business-to-Business / -Consumer","B2B = Verkauf an Unternehmen, B2C = Verkauf an Privatkund*innen.","2.2.3"],
+["Buying Center","","Die mehreren Personen, die im B2B gemeinsam über einen Kauf entscheiden.","2.2.3"],
+["DSGVO","Datenschutz-Grundverordnung","EU-Regeln für personenbezogene Daten, u. a. Einwilligung und Löschung.","2.2.3"],
+["Customer Journey","","Der Weg einer Kundin vom ersten Kontakt bis zur Bindung, bestehend aus Touchpoints (Berührungspunkten).","2.2.3"],
+["Next Best Offer","","Das Angebot, das für diese Person jetzt am besten passt, von KI vorgeschlagen.","2.2.3"],
+["Double-Opt-In","DOI","Anmeldung plus Bestätigungsmail. Für Newsletter Pflicht.","2.2.4"],
+["Trigger","","Ereignis, das einen automatischen Workflow startet, z. B. ein Warenkorbabbruch.","2.2.4"],
+["A/B-Test","","Zwei Varianten (z. B. Betreffzeilen) gegeneinander testen und die bessere nutzen.","2.2.4"],
+["CTA","Call to Action","Handlungsaufforderung, z. B. der Button „Jetzt anmelden“.","2.2.4"],
+["BFSG","Barrierefreiheitsstärkungsgesetz","Gesetz für zugängliche digitale Angebote, gilt seit 28.06.2025. Betrifft vor allem Service-Mails.","2.2.4"],
+["EU AI Act","","EU-Regeln für KI, u. a. Kennzeichnungspflicht für KI-generierte Inhalte.","2.2.4"],
+["HITL","Human-in-the-Loop","Ein Mensch prüft und verantwortet KI-Entwürfe, bevor sie rausgehen.","2.2.5"],
+["Plain Language","","Klare, einfache Sprache, die Rückfragen vermeidet.","2.2.5"],
+["Eskalation","Handoff","Übergabe eines Falls an eine höhere Stufe oder einen Menschen nach festen Regeln.","2.2.5"]];
+const AB={};T.forEach(t=>t[0].split("/").forEach(a=>{if(/^[A-Z][A-Z0-9-]+$/.test(a))AB[a]=t}));
+const mast=k=>V["m_"+k]==="1",setM=(k,v)=>{V["m_"+k]=v?"1":"";save()};
+const shuf=a=>a.map(x=>[Math.random(),x]).sort((p,q)=>p[0]-q[0]).map(x=>x[1]);
+let S={tab:"quiz",lf:"all",i:0,flip:0,deck:[],q:null};
+const pool=()=>T.filter(t=>S.lf==="all"||t[3]===S.lf);
+function newDeck(){S.deck=shuf(pool()).sort((a,b)=>mast(a[0])-mast(b[0]));S.i=0;S.flip=0}
+function newQuiz(){const p=pool(),base=p.length>=4?p:T,sc=shuf(SC.filter(c=>S.lf==="all"||c[0]===S.lf)).slice(0,S.lf==="all"?2:1).map(c=>{const ix=shuf(c[2].map((o,i)=>i));return {typ:2,p:c[1],opts:ix.map(i=>c[2][i]),ok:ix.indexOf(c[3]),ex:c[4]}});
+ S.q={i:0,score:0,streak:0,best:0,ans:null,qs:shuf(shuf(p).slice(0,8-sc.length).map(t=>({t,typ:Math.random()<.5,opts:shuf([t].concat(shuf(base.filter(x=>x!==t)).slice(0,3)))})).concat(sc))}}
+const BT="rounded-xl border px-4 py-3 text-left text-sm transition ";
+function arena(){const el=$("#arenaBody"),n=T.filter(t=>mast(t[0])).length;
+ $("#arenaBar").style.width=Math.round(100*n/T.length)+"%";$("#arenaCnt").textContent=n+" von "+T.length+" Begriffen gemeistert";
+ document.querySelectorAll("[data-tab]").forEach(b=>b.className="rounded-full px-4 py-2 text-sm font-medium transition "+(b.dataset.tab===S.tab?"bg-emerald-800 text-white":"bg-white border border-slate-300 text-slate-700 hover:border-emerald-700"));
+ if(S.tab==="lex"){el.innerHTML=`<input id="lexq" placeholder="Begriff suchen …" class="${IN} mb-3"><div id="lexl" class="space-y-2"></div>`;const f=()=>{const q=$("#lexq").value.toLowerCase();$("#lexl").innerHTML=pool().filter(t=>(t[0]+t[1]+t[2]).toLowerCase().includes(q)).map(t=>`<div class="rounded-2xl border border-slate-200 bg-white p-3"><div class="flex flex-wrap items-baseline gap-2"><b class="text-emerald-900">${t[0]}</b><span class="text-sm text-slate-500">${t[1]}</span><span class="ml-auto text-xs text-slate-500">${t[3]}${mast(t[0])?" · ✓":""}</span></div><p class="text-sm text-slate-600 mt-1">${t[2]}</p></div>`).join("")};$("#lexq").oninput=f;f()}
+ else if(S.tab==="cards"){if(!S.deck.length)newDeck();const d=S.deck[S.i];
+  el.innerHTML=!d?`<div class="text-center py-8"><p class="font-semibold text-emerald-900">Stapel durch! Du hast ${n} von ${T.length} Begriffen gemeistert.</p><button data-a="deck" class="mt-4 rounded-full bg-emerald-800 text-white px-5 py-2 text-sm">Neu mischen</button></div>`
+  :`<p class="text-sm text-slate-500 mb-2">Karte ${S.i+1} von ${S.deck.length}</p><button data-a="flip" class="w-full min-h-[11rem] rounded-3xl border-2 border-emerald-700 bg-white p-6 text-center">${S.flip?`<span class="text-slate-700">${d[2]}</span>`:`<b class="text-2xl text-emerald-900 block">${d[0]}</b><span class="text-slate-500 text-sm block mt-1">${d[1]}</span><span class="text-xs text-slate-500 block mt-4">Tippen zum Umdrehen</span>`}</button>${S.flip?`<div class="mt-3 flex gap-3"><button data-a="again" class="flex-1 rounded-full border border-slate-300 py-2 text-sm">Nochmal</button><button data-a="know" class="flex-1 rounded-full bg-emerald-800 text-white py-2 text-sm">Gewusst ✓</button></div>`:""}`}
+ else{if(!S.q)newQuiz();const q=S.q,c=q.qs[q.i];
+  if(!c){el.innerHTML=`<div class="text-center py-6"><p class="text-3xl font-bold text-emerald-900">${q.score} / ${q.qs.length}</p><p class="mt-2 text-slate-600">${q.score===q.qs.length?"Perfekt!":q.score>=q.qs.length/2?"Starke Runde, weiter so.":"Noch etwas Training, die Karteikarten helfen."} Beste Serie: ${q.best}</p><button data-a="restart" class="mt-4 rounded-full bg-emerald-800 text-white px-5 py-2 text-sm">Neue Runde</button></div>`}
+  else el.innerHTML=`<div class="flex justify-between text-sm text-slate-500 mb-2"><span>Frage ${q.i+1} von ${q.qs.length}</span><span>Punkte ${q.score} · Serie ${q.streak}</span></div><p class="font-semibold text-slate-900 mb-3">${c.typ===2?`<span class="text-xs font-medium text-emerald-800 block mb-1">Anwendungsfall</span>${c.p}`:c.typ?`Was bedeutet <span class="text-emerald-800">${c.t[0]}</span>${c.t[1]?" ("+c.t[1]+")":""}?`:`Welcher Begriff ist gemeint?<span class="block font-normal text-slate-600 mt-1">${c.t[2]}</span>`}</p><div class="space-y-2">${c.opts.map((o,k)=>`<button data-o="${k}" class="${BT}w-full ${q.ans===null?"border-slate-300 bg-white hover:border-emerald-700":isOk(c,k)?"border-emerald-600 bg-emerald-50":k===q.ans?"border-red-400 bg-red-50":"border-slate-200 bg-white opacity-60"}">${c.typ===2?o:c.typ?o[2]:o[0]}</button>`).join("")}</div>${q.ans!==null?`<p class="mt-3 text-sm ${isOk(c,q.ans)?"text-emerald-700":"text-red-700"}"><b>${isOk(c,q.ans)?"Richtig!":"Nicht ganz."}</b> ${c.typ===2?c.ex:c.t[0]+": "+c.t[2]}</p><button data-a="next" class="mt-3 rounded-full bg-emerald-800 text-white px-5 py-2 text-sm">${q.i+1<q.qs.length?"Weiter":"Ergebnis"}</button>`:""}`}}
+$("#arena").addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;const a=b.dataset.a;
+ if(b.dataset.tab){S.tab=b.dataset.tab;if(S.tab==="cards")newDeck();if(S.tab==="quiz")newQuiz()}
+ else if(b.dataset.o!==undefined){const q=S.q,c=q.qs[q.i];if(q.ans!==null)return;q.ans=+b.dataset.o;const ok=isOk(c,q.ans);if(c.typ!==2)setM(c.t[0],ok);if(ok){q.score++;q.streak++;q.best=Math.max(q.best,q.streak)}else q.streak=0}
+ else if(a==="next"){S.q.i++;S.q.ans=null}else if(a==="restart")newQuiz();else if(a==="deck")newDeck();
+ else if(a==="flip")S.flip=1;else if(a==="know"||a==="again"){setM(S.deck[S.i][0],a==="know");S.i++;S.flip=0}
+ arena()});
+$("#lf").addEventListener("change",e=>{S.lf=e.target.value;newDeck();newQuiz();arena()});
+document.addEventListener("keydown",e=>{const t=e.target;if(e.key==="Escape")$("#tip").classList.add("hidden");if((e.key==="Enter"||e.key===" ")&&t.classList&&t.classList.contains("ab")){e.preventDefault();t.click()}});
+document.addEventListener("click",e=>{const a=e.target.closest(".ab"),g=e.target.closest("[data-arena]"),tp=$("#tip");
+ if(a){e.preventDefault();const t=AB[a.dataset.ab];tp.innerHTML=`<b>${t[0]}</b>${t[1]?" · "+t[1]:""}<br>${t[2]}`;tp.classList.remove("hidden");return}
+ tp.classList.add("hidden");
+ if(g){S.lf=g.dataset.arena;S.tab="quiz";$("#lf").value=S.lf;newQuiz();arena();$("#arena").scrollIntoView()}},true);
+function wrap(root){const re=new RegExp("\\b("+Object.keys(AB).sort((a,b)=>b.length-a.length).map(k=>k.replace(/-/g,"\\-")).join("|")+")\\b","g"),w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT),ns=[];while(w.nextNode())ns.push(w.currentNode);
+ ns.forEach(n=>{re.lastIndex=0;if(!re.test(n.data)||n.parentElement.closest("textarea,input,select,option,.ab"))return;re.lastIndex=0;const sp=document.createElement("span");sp.innerHTML=n.data.replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c])).replace(re,'<span class="ab" tabindex="0" role="button" data-ab="$1">$1</span>');n.replaceWith(...sp.childNodes)})}
+const Z={"2.2.1":"den Unterschied zwischen SEO und GEO erklären · sagen, welche SEO-Grundlagen weiter gelten · Sichtbarkeit mit Sistrix, Search Console und GA4 einordnen","2.2.2":"die 5 Phasen des Content-Prozesses nennen · Format, Kanal und Inhaltstyp unterscheiden · ein Format passend zu Ziel und Funnel-Phase wählen","2.2.3":"erklären, was ein CRM leistet · drei Stufen der Personalisierung und B2B gegen B2C unterscheiden · MQL und SQL abgrenzen und Lead-Scoring anwenden","2.2.4":"Arten und Workflows im E-Mail-Marketing unterscheiden · rechtliche Pflichten (Double-Opt-In, AI Act, BFSG) nennen · Trigger, Aktion und Bedingung planen","2.2.5":"begründen, warum Service Teil des Marketings ist · entscheiden, wann KI antworten darf und wann ein Mensch · ein Telefongespräch in 5 Phasen aufbauen"};
+const SC=[
+["2.2.1","Eine Seite steht bei Google auf Platz 2, wird aber in keiner KI-Antwort genannt. Was hilft am ehesten?",["Mehr Keywords in den Text schreiben","Eine klare, zitierbare Kurzantwort mit Abschnitten und FAQ ergänzen und die Marke überall gleich benennen","Die Seite auf noindex setzen","Eine llms.txt anlegen, dann zitiert Google sie sicher"],1,"KI wählt Passagen, die abgeschlossen, zitierbar und einer Entity eindeutig zugeordnet sind. llms.txt ist laut Google für Google-Rankings nicht nötig, und noindex schließt die Seite aus."],
+["2.2.2","Du willst Vertrauen bei Interessierten aufbauen, die Anbieter vergleichen (MOFU). Welches Format passt am besten?",["Kurzvideo für maximale Reichweite","Tutorial oder Whitepaper per Newsletter","Banner mit Rabattcode","Nur Produktbilder"],1,"MOFU heißt erwägen: Newsletter, Whitepaper und Tutorials bauen Vertrauen auf. Kurzvideos dienen eher TOFU, Rabattcodes eher BOFU."],
+["2.2.3","Ein Lead hat ein Whitepaper geladen (+10), oft Newsletter-Links geklickt (+20), aber noch kein Gespräch gebucht. Wie gehst du vor?",["Sofort als SQL an den Vertrieb übergeben","Per Lead Nurturing mit passendem Content weiter begleiten, bis die vereinbarten Kriterien erfüllt sind","Aus dem CRM löschen","Nichts tun"],1,"Der Lead ist interessiert (MQL), aber noch nicht vertriebsreif. Nurturing entwickelt ihn weiter, die Übergabe folgt nach den gemeinsam festgelegten Scoring-Kriterien."],
+["2.2.4","Jemand legt Produkte in den Warenkorb und verlässt den Shop. Wie baust du den Workflow?",["Trigger Warenkorbabbruch, Aktion Erinnerungsmail nach etwa 3 Stunden, Bedingung: stoppen, sobald gekauft wird","Allen Kontakten wöchentlich denselben Newsletter schicken","Trigger Newsletter-Anmeldung, Aktion Rabattcode an alle","Jeden Abend manuell anrufen"],0,"Ein Workflow besteht aus Trigger, Aktion und Bedingung. Die Erinnerung nach 3 Stunden ist das Beispiel der Vorlesung."],
+["2.2.5","Eine verärgerte Kundin droht wegen einer verspäteten Lieferung mit einem Anwalt. Was gilt?",["Die KI-Antwort geht automatisch raus","Ein Mensch übernimmt, die KI liefert höchstens einen geprüften Entwurf","Ein Standard-Textbaustein genügt","Nicht antworten"],1,"Bei Beschwerden, Emotionen und Rechtlichem gilt 100 % Human Oversight. Kulanz und Haftung kann KI nicht verantworten."]];
+const isOk=(c,k)=>c.typ===2?k===c.ok:c.opts[k]===c.t;
+function field(m,x){const k=m.id+"_"+x[0],lb=`<label class="block text-sm font-medium text-slate-700 mb-1.5" for="${k}">${x[1]}</label>`;
+ if(x[2]==="text")return `<div>${lb}<input id="${k}" data-k="${k}" class="${IN}"></div>`;
+ const c=x[2]==="words"?`<div data-c="${k}" data-r="${x[3]}" class="text-xs text-slate-500 mt-1"></div>`:"";
+ return `<div>${lb}<textarea id="${k}" data-k="${k}" rows="3" class="${IN}"></textarea>${c}</div>`}
+$("#lessons").innerHTML=L.map(l=>`<section id="s${l.id}" class="rounded-3xl border border-slate-200 overflow-hidden">
+ <div class="bg-emerald-800 text-white px-6 sm:px-8 py-6"><div class="text-emerald-200 text-sm font-medium">Sektion ${l.id}</div><h2 class="mt-1 text-xl sm:text-2xl font-bold leading-snug">${l.t}</h2></div>
+ <div class="p-6 sm:p-8 space-y-7">
+  <p class="text-slate-700 max-w-3xl">${l.intro}</p>
+  <div class="rounded-r-xl border-l-4 border-emerald-700 bg-emerald-50 p-4 text-sm"><strong>Merksatz:</strong> ${l.m}</div>
+  ${learn(l)}
+  <div><h3 class="font-semibold text-emerald-900 mb-3">Glossar</h3><div class="space-y-2">${l.d.map(([a,b])=>`<details class="rounded-2xl border border-slate-200 open:border-emerald-300 open:bg-emerald-50/40"><summary class="flex items-center justify-between gap-4 px-4 py-3 font-medium">${a}${chev}</summary><p class="px-4 pb-4 text-sm text-slate-600">${b}</p></details>`).join("")}</div></div>
+  <div><h3 class="font-semibold text-emerald-900 mb-3">Praxis-Leitfaden</h3><ul class="space-y-2">${l.g.map(([a,p],i)=>`<li><label class="flex items-start gap-3 rounded-2xl border border-slate-200 px-4 py-3 cursor-pointer hover:border-emerald-400 transition"><input type="checkbox" data-k="c_${l.id}_${i}" class="mt-1 h-4 w-4 accent-emerald-800"><span class="flex-1 text-sm">${a}</span><span class="shrink-0 text-xs font-medium border rounded-full px-2.5 py-0.5 ${BC[p]}">Wichtigkeit: ${p}</span></label></li>`).join("")}</ul></div>
+  ${steps(l)}
+  <div><button data-arena="${l.id}" class="rounded-full border border-emerald-700 text-emerald-800 text-sm font-medium px-4 py-2 hover:bg-emerald-50 transition">Quiz zu ${l.id} starten</button></div>
+  <details class="rounded-2xl border border-emerald-300 bg-white"><summary id="sm_${l.id}" class="px-4 py-3 font-semibold text-emerald-900"></summary><div class="px-4 pb-5 pt-2 space-y-4">${l.f.map(x=>field(l,x)).join("")}<div><label class="block text-sm font-medium text-slate-700 mb-1.5" for="${l.id}_note">Eigene Notizen (zählen nicht zum Fortschritt)</label><textarea id="${l.id}_note" data-k="${l.id}_note" rows="2" class="${IN}"></textarea></div></div></details>
+ </div></div></section>`).join("");
+$("#road").innerHTML=`<h2 class="text-xl font-bold text-emerald-900">Abschluss: ${R.t}</h2><p class="text-sm text-slate-600 mt-1">${R.i}</p><details class="mt-4 rounded-2xl border border-emerald-300"><summary id="sm_Abschluss" class="px-4 py-3 font-semibold text-emerald-900"></summary><div class="px-4 pb-5 pt-2 space-y-3">${[0,1,2].map(r=>`<div class="grid gap-2 sm:grid-cols-[2fr_1fr_1fr_1.4fr]"><input data-k="r${r}m" placeholder="Maßnahme ${r+1}" class="${IN}"><select data-k="r${r}p" class="${IN}"><option value="">Priorität</option>${PR.map(x=>`<option>${x}</option>`).join("")}</select><select data-k="r${r}a" class="${IN}"><option value="">Aufwand</option>${AU.map(x=>`<option>${x}</option>`).join("")}</select><input data-k="r${r}k" placeholder="Erfolgs-Kennzahl" class="${IN}"></div>`).join("")}</div></details>`;
+
+wrap($("#lessons"));wrap($("#ov"));newQuiz();arena();
+document.querySelectorAll("[data-k]").forEach(e=>{const v=V[e.dataset.k];if(v!=null)e.type==="checkbox"?e.checked=v==="1":e.value=v});
+function up(){let a=0,t=0;MODS.forEach(m=>{const k=keys(m),c=k.filter(x=>(V[x]||"").trim()).length;a+=c;t+=k.length;
+ $("#sm_"+m.id).textContent=(c===k.length?"✓ ":"")+(m.road?"Workbook":"Praxis-Workbook")+" ("+c+"/"+k.length+")";
+ if(!m.road){const p=Math.round(100*c/k.length);document.querySelector(`[data-bar="${m.id}"]`).style.width=p+"%";document.querySelector(`[data-pct="${m.id}"]`).textContent=p+" %"}});
+ $("#barT").style.width=Math.round(100*a/t)+"%";$("#cntT").textContent=a+" von "+t+" Feldern";
+ document.querySelectorAll("[data-c]").forEach(c=>{const n=wc(V[c.dataset.c]),r=c.dataset.r.split(",").map(Number);c.textContent=n+" Wörter (Ziel: "+(r[0]>1?r[0]+" bis ":"höchstens ")+r[1]+")";c.className="text-xs mt-1 "+(n>=r[0]&&n<=r[1]?"text-emerald-700":n?"text-amber-700":"text-slate-500")})}
+document.addEventListener("input",e=>{const k=e.target.dataset&&e.target.dataset.k;if(!k||e.target.type==="checkbox")return;V[k]=e.target.value;save();up()});
+document.addEventListener("change",e=>{const k=e.target.dataset&&e.target.dataset.k;if(!k)return;V[k]=e.target.type==="checkbox"?(e.target.checked?"1":""):e.target.value;save();up()});
+up();
+
+function dump(){const o=["PLAYBOOK 2.2 – SEO, Content & CRM Marketing","Exportiert am "+new Date().toLocaleDateString("de-DE")+"\n","Begriffe-Arena: "+T.filter(t=>mast(t[0])).length+" von "+T.length+" Begriffen gemeistert\n"];
+ L.forEach(l=>{o.push("## "+l.id+" "+l.t,"Leitfaden:");l.g.forEach(([a,p],i)=>o.push("  ["+(V["c_"+l.id+"_"+i]==="1"?"x":" ")+"] "+a+" ("+p+")"));
+  l.f.forEach(x=>{const v=V[l.id+"_"+x[0]];if(v)o.push("\n"+x[1]+"\n"+v)});if(V[l.id+"_note"])o.push("\nNotizen:\n"+V[l.id+"_note"]);o.push("")});
+ o.push("## "+R.t);[0,1,2].forEach(r=>{if(V["r"+r+"m"])o.push("- "+V["r"+r+"m"]+" | Priorität: "+(V["r"+r+"p"]||"-")+" | Aufwand: "+(V["r"+r+"a"]||"-")+" | KPI: "+(V["r"+r+"k"]||"-"))});return o.join("\n")+"\n"}
+let tt;function toast(m){const t=$("#toast");t.textContent=m;t.classList.remove("opacity-0");clearTimeout(tt);tt=setTimeout(()=>t.classList.add("opacity-0"),3000)}
+function fb(t){const x=document.createElement("textarea");x.value=t;x.style.cssText="position:fixed;opacity:0";document.body.appendChild(x);x.select();let ok=false;try{ok=document.execCommand("copy")}catch(e){}x.remove();return ok}
+async function copy(b){const t=dump();let ok=false;try{await navigator.clipboard.writeText(t);ok=true}catch(e){ok=fb(t)}
+ toast(ok?"✓ Alle Eingaben in die Zwischenablage kopiert":"Kopieren nicht möglich, bitte „Als Textdatei speichern“ nutzen");
+ if(ok){const o=b.textContent;b.textContent="✓ Kopiert";setTimeout(()=>b.textContent=o,2000)}}
+document.querySelectorAll("[data-export]").forEach(b=>b.onclick=()=>copy(b));
+$("#dl").onclick=()=>{const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([dump()],{type:"text/plain;charset=utf-8"}));a.download="playbook-2-2-workbook.txt";document.body.appendChild(a);a.click();a.remove();toast("✓ Textdatei gespeichert")};
+$("#reset").onclick=()=>{if(confirm("Alle Eingaben löschen?")){V={};save();location.reload()}};
+})();
+</script>
 </body>
 </html>
-<section id="gesamtbild">
-  <h2>Das Gesamtbild in 2 Minuten</h2>
-  <p class="lead">Damit aus einer Idee ein Kauf wird, durchlaufen Kunden und Inhalte eine feste Kette.</p>
-  
-  <div class="steps">
-    <div class="step"><h3>1. Entdecken (TOFU)</h3><p>Reichweite &amp; Aufmerksamkeit über Videos, Blogs, Social Media.</p></div>
-    <div class="step"><h3>2. Vertiefen (MOFU)</h3><p>Interesse &amp; Vertrauen aufbauen über Guides, E-Books &amp; Demos.</p></div>
-    <div class="step"><h3>3. Konvertieren (BOFU)</h3><p>Kaufentscheidung auslösen über Testimonials &amp; Datenblätter.</p></div>
-  </div>
-
-  <div style="background: #f5f5f5; padding: 15px; border-left: 4px solid #333; margin: 20px 0;">
-    <p><b>Eselsbrücke 1:</b> TOFU holt die Leute ab, MOFU hält sie fest, BOFU bringt den Kauf.</p>
-    <p><b>Eselsbrücke 2:</b> KI ist der Junior-Co-Autor für Masse &amp; Tempo – der Mensch ist der Chefredakteur für Haltung, Fakten &amp; Empathie.</p>
-  </div>
-
-  <h3>Warum das im KI-Zeitalter wichtig ist</h3>
-  <ul>
-    <li><b>GEO (Generative Engine Optimization):</b> Suche verlagert sich zu KI-Antworten (Google AI Overviews, ChatGPT). Inhalte brauchen klare Strukturen und FAQs, um zitiert zu werden.</li>
-    <li><b>EU AI Act:</b> Pflicht zur Kennzeichnung von KI-generierten Inhalten (Text, Bild, Video).</li>
-  </ul>
-
-  <details>
-    <summary>Wichtige Begriffe für das Modul (Klick zum Aufklappen)</summary>
-    <div class="body" style="padding: 10px;">
-      <p><b>Zero-Click-Problem:</b> Chatbots beantworten Fragen direkt auf der Suchseite, ohne dass Nutzer weiterklicken.</p>
-      <p><b>Content Recycling:</b> Bestehende Inhalte aufgreifen und in neue Formate umwandeln (z. B. Blogbeitrag &rarr; Reel).</p>
-      <p><b>UGC (User-Generated Content):</b> Von Kunden erstellte Inhalte (Bewertungen, Videos) schaffen Vertrauen.</p>
-      <p><b>Vektorgrafik:</b> Verlustfrei skalierbare Grafiken (aus Illustrator/Inkscape) – ideal für Logos.</p>
-    </div>
-  </details>
-</section>
